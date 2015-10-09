@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_master.master.cs" Inherits="admin_master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <link href="css/admin_master.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style5 {
+            width: 100%;
+        }
+         .auto-style1 {
+            width: 100%;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+       
+        .auto-style2 {
+            width: 100%;
+            border: 1px solid #000000;
+             border-collapse: collapse;
+        }
+        .auto-style3 {
+            width: 180px;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <div>
+            <table class="auto-style5">
+                <tr>
+                    <td>
+                        <div style="height: 80px; background-color: #3B6289;">
+                            <table class="auto-style1">
+                                <tr style="height: 55px;">
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td>
+                                        <div style="border: 1px solid white; background-color: #363636; height: 30px;">
+                                            <asp:Button ID="dashboard_btn" runat="server" Text="Dashboard" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="dashboard_btn_Click" />
+                                            <asp:Button ID="organization_btn" runat="server" Text="Organization" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="organization_btn_Click" />
+                                            <asp:Button ID="employee_btn" runat="server" Text="Employee" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="employee_btn_Click" />
+                                            <asp:Button ID="reports_btn" runat="server" Text="Reports" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="reports_btn_Click" />
+                                            <asp:Button ID="preferences_btn" runat="server" Text="Preferences" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="preferences_btn_Click" />
+                                            <asp:Button ID="projects_btn" runat="server" Text="Projects" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="projects_btn_Click" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="height: 552px;">
+                            <table class="auto-style1" border="1">
+                                <tr valign="top">
+                                    <td class="auto-style3">
+                                        <div style="height: 551px; width: 180px; background-color: #F2F2F2">
+
+                                            <asp:ContentPlaceHolder ID="side_bar" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+
+                                    </td>
+                                    <td>
+
+
+                                        <table class="auto-style2" border="1">
+                                            <tr>
+                                                <td>
+
+                                                    <div style="height: 55px; background-color: #F2F2F2">
+                                                        <asp:ContentPlaceHolder ID="sub_head" runat="server">
+                                                        </asp:ContentPlaceHolder>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="height: 490px;">
+
+                                                        <asp:ContentPlaceHolder ID="emp_content" runat="server"></asp:ContentPlaceHolder>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+       
+        <%--  <div style="height: 630px;position: relative; width: 1364px; left: -7px; top: -8px;">
+                    <div style="height: 100px; background-color: #3B6289; position: relative; width: 1364px; left: -7px; top: -8px; ">
+                        <div style="border: 1px solid white; width: 1362px; background-color: #363636 ; position: absolute; bottom: 0px; height: 30px;">
+                            <asp:Button ID="dashboard_btn" runat="server" Text="Dashboard" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="dashboard_btn_Click" />
+                            <asp:Button ID="organization_btn" runat="server" Text="Organization" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="organization_btn_Click"  />
+                            <asp:Button ID="employee_btn" runat="server" Text="Employee" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="employee_btn_Click"  />
+                            <asp:Button ID="reports_btn" runat="server" Text="Reports" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="reports_btn_Click"  />
+                            <asp:Button ID="preferences_btn" runat="server" Text="Preferences" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="preferences_btn_Click"  />
+                            <asp:Button ID="projects_btn" runat="server" Text="Projects" BorderStyle="None" CssClass="Initial" Height="30px" Width="110px" OnClick="projects_btn_Click"  />
+                        </div>
+                       
+                    </div>
+            <div style="height: 530px; background-color: #3B6289; position: absolute; width: 1364px; bottom: 0px; ">
+                    <asp:ContentPlaceHolder ID="cph1" runat="server">
+                    </asp:ContentPlaceHolder>
+             </div>
+                </div>--%>
+    </form>
+</body>
+</html>

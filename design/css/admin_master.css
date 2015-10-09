@@ -1,0 +1,58 @@
+﻿
+   body {margin-left:0px; margin-top:0px; margin-right:0px; margin-bottom:0px;}
+
+
+ .Initial {
+            display: block;
+            padding: 4px 18px 4px 18px;
+            float: left;
+            background: url('images/InitialImage.png') no-repeat right top;
+            color: white;
+            font-weight: bold;
+        }
+
+            .Initial:hover {
+                color: deepskyblue;
+                /*background: url('images/SelectedButton.png') no-repeat right top;*/
+            }
+
+        .Clicked {
+            float: left;
+            display: block;
+            background: url('images/InitialImage.png') no-repeat right top;
+            /*background: url('images/SelectedButton.png') no-repeat right top;*/
+            padding: 4px 18px 4px 18px;
+            color: deepskyblue;
+            font-weight: bold;
+           
+        }
+
+        .original {
+            /*display: block;
+            padding: 4px 18px 4px 18px;
+            float: left;
+            
+            background: url('images/InitialImage.png') no-repeat right top;*/
+            background-color:#F2F2F2;
+            color: black;
+           font-weight: bold;
+           text-align:left;
+           
+        }
+
+            .original:hover {
+                color: deepskyblue;
+                /*background: url('images/SelectedButton.png') no-repeat right top;*/
+            }
+
+        .original_clicked {
+            /*float: left;
+            display: block;
+            background: url('images/InitialImage.png') no-repeat right top;
+            background: url('images/SelectedButton.png') no-repeat right top;
+            padding: 4px 18px 4px 18px;
+           */
+           text-align:left;
+            font-weight: bold;
+            color: deepskyblue;
+        }

@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/admin_master.master" AutoEventWireup="true" CodeFile="emp_master.master.cs" Inherits="emp_master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+       
+        .auto-style2 {
+            width: 100%;
+            border: 1px solid #000000;
+             border-collapse: collapse;
+        }
+        .auto-style3 {
+            width: 180px;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+
+
+        .original {
+            /*display: block;
+            padding: 4px 18px 4px 18px;
+            float: left;
+            
+            background: url('images/InitialImage.png') no-repeat right top;*/
+            background-color:#F2F2F2;
+            color: black;
+           font-weight: bold;
+           text-align:left;
+           
+        }
+
+            .original:hover {
+                color: deepskyblue;
+                /*background: url('images/SelectedButton.png') no-repeat right top;*/
+            }
+
+        .original_clicked {
+            /*float: left;
+            display: block;
+            background: url('images/InitialImage.png') no-repeat right top;
+            background: url('images/SelectedButton.png') no-repeat right top;
+            padding: 4px 18px 4px 18px;
+           */
+           text-align:left;
+            font-weight: bold;
+            color: deepskyblue;
+        }
+    </style>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" runat="Server">
+
+    
+</asp:Content>
+
